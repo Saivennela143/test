@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<deployment-plan xmlns="http://www.bea.com/ns/weblogic/90" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <application-name>companyStoreAdminPlan</application-name>
+  <module-override>
+    <module-name>companyStoreAdmin.ear</module-name>
+    <module-type>ear</module-type>
+    <module-descriptor external="false">
+      <root-element>weblogic-application</root-element>
+      <uri>META-INF/weblogic-application.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>application</root-element>
+      <uri>META-INF/application.xml</uri>
+    </module-descriptor>
+  </module-override>
+  <module-override>
+    <module-name>csAdministration</module-name>
+    <module-type>war</module-type>
+    <module-descriptor external="false">
+      <root-element>weblogic-web-app</root-element>
+      <uri>WEB-INF/weblogic.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>web-app</root-element>
+      <uri>WEB-INF/web.xml</uri>
+    </module-descriptor>
+  </module-override>
+  <module-override>
+    <module-name>csAdministrationEJBs</module-name>
+    <module-type>jar</module-type>
+    <module-descriptor external="false">
+      <root-element>weblogic-ejb-jar</root-element>
+      <uri>META-INF/weblogic-ejb-jar.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>ejb-jar</root-element>
+      <uri>META-INF/ejb-jar.xml</uri>
+    </module-descriptor>
+  </module-override>
+  <module-override>
+    <module-name>csAdministrationEJBs.jar</module-name>
+    <module-type>ejb</module-type>
+    <module-descriptor external="false">
+      <root-element>weblogic-ejb-jar</root-element>
+      <uri>META-INF/weblogic-ejb-jar.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>ejb-jar</root-element>
+      <uri>META-INF/ejb-jar.xml</uri>
+    </module-descriptor>
+  </module-override>
+  <module-override>
+    <module-name>csAdministration.war</module-name>
+    <module-type>war</module-type>
+    <module-descriptor external="false">
+      <root-element>weblogic-web-app</root-element>
+      <uri>WEB-INF/weblogic.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>web-app</root-element>
+      <uri>WEB-INF/web.xml</uri>
+    </module-descriptor>
+  </module-override>
+  <config-root xsi:nil="true"></config-root>
+</deployment-plan>
